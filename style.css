@@ -1,0 +1,209 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0%;
+  padding: 0%;
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  text-align: left;
+}
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #fff;
+}
+nav {
+  background-color: #000;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+  margin: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+main {
+  padding: 20px;
+}
+footer {
+  text-align: center;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 2px;
+  position: bottom-absolute;
+  width: 100%;
+}
+.video {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.video .thumbnail {
+  position: relative;
+  width: 300px;
+  height: 190px;
+  margin: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  background-color: #333;
+}
+.video .thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video .thumbnail:hover {
+  transform: scale(1.1);
+}
+.video .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 8px;
+  margin: 0;
+  font-weight: bold;
+}
+
+/
+  .slider-frame{
+      overflow: hidden;
+      height: 800px;
+      width: 1200px;
+      margin-left: 360px;
+      margin-top: 20px;
+  }
+ 
+  /* MOVIES PAGE */
+.movie {
+  position: relative;
+  margin: 10px;
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.movie img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.thumbnail:hover img {
+  transform: scale(1.1);
+}
+
+.movie-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.movie:hover .movie-name {
+  opacity: 1;
+}
+
+
+
+  /*---------- SLIDE ANIMATION --------------*
+ 
+ 
+  @keyframes slide_animation{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1200px;}
+    30% {left:1200px;}
+    40% {left: 2400px;}
+    50% {left: 2400px;}
+    60% {left: 1200px;}
+    70% {left: 1200px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    100% {left:0px;}
+}
+
+@-webkit-keyframes slide_animation{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1200px;}
+    30% {left:1200px;}
+    40% {left: 2400px;}
+    50% {left: 2400px;}
+    60% {left: 1200px;}
+    70% {left: 1200px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    100% {left:0px;}
+}
+
+.slide-images{
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.img-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Additional styles for Netflix-like appearance 
+header, nav, main, footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.video .thumbnail {
+  width: 275px;
+  height: 155px;
+}
+.video .title {
+  font-size: 14px;
+  padding: 8px;
+}
+
+position: fixed;
+width: 100%;
+opacity: 0.99;
+color: white;
+background-color: rgb(14, 14, 14);
+z-index: 999;
