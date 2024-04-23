@@ -46,8 +46,8 @@ footer {
 }
 .video .thumbnail {
   position: relative;
-  width: 300px;
-  height: 190px;
+  width: 200px;
+  height: 300px;
   margin: 10px;
   overflow: hidden;
   transition: transform 0.3s;
@@ -73,16 +73,14 @@ footer {
   font-weight: bold;
 }
 
-/
-  .slider-frame{
-      overflow: hidden;
-      height: 800px;
-      width: 1200px;
-      margin-left: 360px;
-      margin-top: 20px;
-  }
- 
-  /* MOVIES PAGE */
+.slider-frame {
+  overflow: hidden;
+  height: 800px;
+  width: 1200px;
+  margin-left: 360px;
+  margin-top: 20px;
+}
+
 .movie {
   position: relative;
   margin: 10px;
@@ -119,91 +117,55 @@ footer {
   opacity: 1;
 }
 
-
-
-  /*---------- SLIDE ANIMATION --------------*
- 
- 
-  @keyframes slide_animation{
-    0% {left:0px;}
-    10% {left:0px;}
-    20% {left:1200px;}
-    30% {left:1200px;}
-    40% {left: 2400px;}
-    50% {left: 2400px;}
-    60% {left: 1200px;}
-    70% {left: 1200px;}
-    80% {left: 0px;}
-    90% {left: 0px;}
-    100% {left:0px;}
+/* Slide animation */
+@keyframes slide_animation {
+  0% {left: 0px;}
+  10% {left: 0px;}
+  20% {left: 1200px;}
+  30% {left: 1200px;}
+  40% {left: 2400px;}
+  50% {left: 2400px;}
+  60% {left: 1200px;}
+  70% {left: 1200px;}
+  80% {left: 0px;}
+  90% {left: 0px;}
+  100% {left: 0px;}
 }
 
-@-webkit-keyframes slide_animation{
-    0% {left:0px;}
-    10% {left:0px;}
-    20% {left:1200px;}
-    30% {left:1200px;}
-    40% {left: 2400px;}
-    50% {left: 2400px;}
-    60% {left: 1200px;}
-    70% {left: 1200px;}
-    80% {left: 0px;}
-    90% {left: 0px;}
-    100% {left:0px;}
+@-webkit-keyframes slide_animation {
+  0% {left: 0px;}
+  10% {left: 0px;}
+  20% {left: 1200px;}
+  30% {left: 1200px;}
+  40% {left: 2400px;}
+  50% {left: 2400px;}
+  60% {left: 1200px;}
+  70% {left: 1200px;}
+  80% {left: 0px;}
+  90% {left: 0px;}
+  100% {left: 0px;}
 }
 
-.slide-images{
-    width: 3600px;
-    height: 800px;
-    margin: 0 0 0 -2400px;
-    position: relative;
-    -webkit-animation-name: slide_animation;
-    animation-name: slide_animation;
-    -webkit-animation-duration: 33s;
-    animation-duration: 33s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-    -webkit-animation-play-state: running;
-    animation-play-state: running;
+.slide-images {
+  width: 3600px;
+  height: 800px;
+  margin: 0 0 0 -2400px;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  animation-name: slide_animation;
+  -webkit-animation-duration: 33s;
+  animation-duration: 33s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
 }
 
-.img-container{
-    height: 800px;
-    width: 1200px;
-    position: relative;
-    float: left;
+.img-container {
+  height: 800px;
+  width: 1200px;
+  position: relative;
+  float: left;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* Additional styles for Netflix-like appearance 
-header, nav, main, footer {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.video .thumbnail {
-  width: 275px;
-  height: 155px;
-}
-.video .title {
-  font-size: 14px;
-  padding: 8px;
-}
-
-position: fixed;
-width: 100%;
-opacity: 0.99;
-color: white;
-background-color: rgb(14, 14, 14);
-z-index: 999;
