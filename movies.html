@@ -5,34 +5,98 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Movie Gallery</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style2.css">
+
 </head>
 <body>
+  <header>
+    <div id="logo">
 
-    <div class="video">
-    <div class="thumbnail">
-    <img src="endgame.jpg" alt="Movie 1">
-    <div class="movie-name">Movie 1</div>
+      <h1><img src="image.png" alt="logo" >   <span onclick="openNav()">&#9776</span></h1>
+    </div>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="movies.html">Movies</a>
+    <a href="shows.html">TV Shows</a>
+    <a href="games.html">Apps & Games</a>
+    <a href="account.html">Account</a>
+
   </div>
+
+  </header>
+
+  <div class="video">
+    <a href="endgame.html" class="thumbnail">
+      <img src="endgame.jpg" alt="Movie 1">
+      <div class="movie-name">Movie 1</div>
+    </a>
+    <a href="godzilla.html" class="thumbnail">
+      <img src="godzilla.jpg" alt="Movie 2">
+      <div class="movie-name">Movie 2</div>
+    </a>
+    <a href="bohemian.html" class="thumbnail">
+      <img src="bohemian.jpg" alt="Movie 3">
+      <div class="movie-name">Movie 3</div>
+    </a>  
   <div class="thumbnail">
-    <img src="GodzillaxKong1.jpg" alt="Movie 2">
-    <div class="movie-name">Movie 2</div>
-  </div>
-  <div class="thumbnail">
-    <img src="bohemian.jpg" alt="Movie 3">
-    <div class="movie-name">Movie 3</div>
-  </div>  <div class="thumbnail">
     <img src="acrosstheuniverse.jpg" alt="Movie 4">
     <div class="movie-name">Movie 4</div>
   </div>
-</div>  <div class="thumbnail">
-  <img src="6underground.jpg" alt="Movie 5">
-  <div class="movie-name">Movie 5</div>
-</div>
+  <div class="thumbnail">
+    <img src="joker.jpg" alt="Movie 2">
+    <div class="movie-name">Movie 2</div>
+  </div>
+  <div class="video">
+    <div class="thumbnail">
+    <img src="batman.jpg" alt="Movie 1">
+    <div class="movie-name">Movie 1</div>
+  </div>
+  <div class="thumbnail">
+    <img src="jumanji.jpg" alt="Movie 2">
+    <div class="movie-name">Movie 2</div>
+  </div>
+  <div class="thumbnail">
+    <img src="oppenheimer.jpg" alt="Movie 3">
+    <div class="movie-name">Movie 3</div>
+  </div>  
+  <div class="thumbnail">
+    <img src="6underground.jpg" alt="Movie 4">
+    <div class="movie-name">Movie 4</div>
+  </div>
+  <div class="thumbnail">
+    <img src="wakanda.jpg" alt="Movie 2">
+    <div class="movie-name">Movie 2</div>
+  </div>
+  <div class="video">
+    <div class="thumbnail">
+    <img src="inter.jpg" alt="Movie 1">
+    <div class="movie-name">Movie 1</div>
+  </div>
+  <div class="thumbnail">
+    <img src="dune.jpg" alt="Movie 2">
+    <div class="movie-name">Movie 2</div>
+  </div>
+  <div class="thumbnail">
+    <img src="john.jpg" alt="Movie 3">
+    <div class="movie-name">Movie 3</div>
+  </div>  
+  <div class="thumbnail">
+    <img src="eternals.jpg" alt="Movie 4">
+    <div class="movie-name">Movie 4</div>
+  </div>
+  <div class="thumbnail">
+    <img src="doctor.jpg" alt="Movie 2">
+    <div class="movie-name">Movie 2</div>
+  </div>
+
+
+</div>  
   <!-- Add more movie divs as needed -->
 </div>
 
-      <footer>
-    <p>&copy; 2023 PhilasWeb. All rights reserved.</p>
-  </footer>
 </body>
+<script src="script.js"></script>
+
 </html>
